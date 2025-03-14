@@ -34,11 +34,11 @@ function Questions() {
             <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold mb-4">
-                        Frequently Asked Questions
+                    Have more question?
                     </h2>
                     <p className="text-gray-600 text-lg">
-                        Get answers to common questions about our design services
-                    </p>
+                    Think of Vizentoo as your very own in-house team  but
+                    completely stress-free and hassle-free                    </p>
                 </div>
 
                 <Accordion type="single" collapsible className="w-full space-y-4">
