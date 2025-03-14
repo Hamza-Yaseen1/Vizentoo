@@ -4,6 +4,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import "../globals.css";
 
 const faqData = [
     {
@@ -64,6 +65,18 @@ function Questions() {
                     </p>
                     <button className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors duration-300">
                         Contact Us
+                    </button>
+                </div>
+            </div>
+            <div className="design mt-10 text-white w-11/12 sm:w-4/5 md:w-3/4 lg:w-4/6 rounded-3xl h-auto min-h-[13rem] m-auto px-4 py-6">
+                <div className="text">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-semibold">
+                        GRAPHIC DESIGN
+                    </h1>
+                </div>
+                <div className="text-center mt-8 sm:mt-10 md:mt-12">
+                    <button className="design-btn px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 rounded-2xl text-base sm:text-lg cursor-pointer">
+                        Get Started at Vizentoo
                     </button>
                 </div>
             </div>
