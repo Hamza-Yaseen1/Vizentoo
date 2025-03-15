@@ -1,6 +1,8 @@
+
 import About from "./Components/about";
 import Hero from "./Components/hero";
 import Hero2 from "./Components/hero2";
+import Hero3 from "./Components/hero3";
 import Questions from "./Components/Questions";
 import Services from "./Components/services";
 
@@ -11,6 +13,7 @@ export default function Home() {
     <Hero2/>
     <About/>
     <Services/>
+    <Hero3/>
     <Questions/>
     </>
   );

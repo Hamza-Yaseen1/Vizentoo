@@ -15,7 +15,7 @@ function Hero2() {
             understands both your brand and your vision, without the high costs
             and profit cuts of maintaining a full-time team
           </p>
-          <button className="rounded-2xl mt-4 px-4 py-2 border border-black hover:bg-black hover:text-white cursor-pointer">
+          <button className="rounded-2xl mt-4 px-4 py-2 transition-all duration-300 border border-black hover:bg-black hover:text-white cursor-pointer">
             Click me
           </button>
         </div>
