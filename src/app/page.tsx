@@ -16,8 +16,8 @@ export default function Home() {
     <About/>
     <Services/>
     <Hero3/>
-    <Questions/>
     <CardV/>
+    <Questions/>
     <Footer/>
     </>
   );
