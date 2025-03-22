@@ -5,26 +5,31 @@ const CardData = [
   {
     title: "Fixed Monthly Rate",
     desc: "No hidden fees, pay the same price every month.",
-    pic: "/images/15.png",
+    pic: "/images/10.png",
   },
   {
-    title: "Fixed Monthly Rate",
-    desc: "No hidden fees, pay the same price every month.",
-    pic: "/images/15.png",
+    title: "Unlimited Requests",
+    desc: "No creativity limitations. Request as many designs as you need.",
+    pic: "/images/11.png",
   },
   {
-    title: "Fixed Monthly Rate",
-    desc: "No hidden fees, pay the same price every month.",
-    pic: "/images/15.png",
+    title: "Unlimited Revisions",
+    desc: "Keep requesting revisions until it s perfect.",
+    pic: "/images/12.png",
   },
   {
-    title: "Fixed Monthly Rate",
-    desc: "No hidden fees, pay the same price every month.",
-    pic: "/images/15.png",
+    title: "Same-Day Delivery",
+    desc: "Get your designs the same day with our premium package",
+    pic: "/images/13.png",
   },
   {
-    title: "Fixed Monthly Rate",
-    desc: "No hidden fees, pay the same price every month.",
+    title: "Professional Designers",
+    desc: "Work with skilled designers who bring creativity and expertise to your projects.",
+    pic: "/images/14.png",
+  },
+  {
+    title: "Designer Match",
+    desc: "Each task is assigned to the most qualified designer.",
     pic: "/images/15.png",
   },
 ];
@@ -45,8 +50,8 @@ function CardV() {
                   <Image 
                     src={data.pic} 
                     alt="" 
-                    height={60} 
-                    width={60} 
+                    height={80} 
+                    width={80} 
                     className="object-contain"
                   />
                 </div>
