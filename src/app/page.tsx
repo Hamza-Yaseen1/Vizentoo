@@ -1,5 +1,7 @@
 
 import About from "./Components/about";
+import CardV from "./Components/card";
+import Footer from "./Components/footer";
 import Hero from "./Components/hero";
 import Hero2 from "./Components/hero2";
 import Hero3 from "./Components/hero3";
@@ -15,6 +17,8 @@ export default function Home() {
     <Services/>
     <Hero3/>
     <Questions/>
+    <CardV/>
+    <Footer/>
     </>
   );
 }
