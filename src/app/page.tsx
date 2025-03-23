@@ -1,6 +1,7 @@
 
 import About from "./Components/about";
 import CardV from "./Components/card";
+import Diff from "./Components/diff";
 import Footer from "./Components/footer";
 import Hero from "./Components/hero";
 import Hero2 from "./Components/hero2";
@@ -18,6 +19,7 @@ export default function Home() {
     <Services/>
     <Hero3/>
     <CardV/>
+    <Diff/>
     <MainCard/>
     <Questions/>
     <Footer/>
