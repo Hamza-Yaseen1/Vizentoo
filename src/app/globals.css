@@ -4,6 +4,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
 .hero{
 
   background-color: #011b1c;
@@ -23,7 +24,7 @@
 
 .design-btn{
   border: 2px solid #1f604f ;
-}
+} 
 
 :root {
   --radius: 0.625rem;
