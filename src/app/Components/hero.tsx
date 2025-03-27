@@ -1,11 +1,26 @@
+"use client";
 import "../globals.css";
  
 
+import { useAnimate } from "framer-motion";
+// import { useRef } from "react";
 import { CircleCheckBig } from 'lucide-react';
+import ShapesAnimation from "./ShapesAnimation";
 
 export default function Hero() {
+  const [scope, animate] = useAnimate();
+
+  function sequence() {
+      animate([
+          [scope.current, { rotate: -90 }],
+          [scope.current, { scale: 1.5 }],
+          [scope.current, { rotate: 0 }],
+          [scope.current, { scale: 1 }]
+      ]);
+  }
   return (
     <div className="hero px-4 py-12 md:px-10 md:py-16 max-w-7xl mx-auto ">
+<ShapesAnimation/>
       <div className="text-center md:text-left">
         <h2 className="text-lg sm:text-xl md:text-2xl text-green-700 font-medium">
           7 Days Free Trial
@@ -46,10 +61,15 @@ export default function Hero() {
       </div>
       
       <div className="mt-10 text-center md:text-left">
-        <button className="bg-green-600 hover:bg-green-700 cursor-pointer text-white px-8 py-3 rounded-full font-medium text-lg transition-colors">
-          Booking
-        </button>
-      </div>
+            
+            <button
+                ref={scope} 
+                onClick={sequence}
+                className="mt-5 bg-green-600 hover:bg-green-700 cursor-pointer text-white px-8 py-3 rounded-full font-medium text-lg transition-colors"
+            >
+                Booking
+            </button>
+        </div>
     </div>
   );
 }

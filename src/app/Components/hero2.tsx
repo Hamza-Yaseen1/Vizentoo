@@ -5,7 +5,7 @@ function Hero2() {
     <>
       <section className="md:flex justify-evenly p-9 pt-24">
         <div className="text md:w-1/2 ">
-          <h1 className="text-3xl font-bold p-3">
+          <h1 className="text-3xl font-bold p-3 text-white">
             Solve Your Design barrier Today
           </h1>
 
@@ -15,7 +15,7 @@ function Hero2() {
             understands both your brand and your vision, without the high costs
             and profit cuts of maintaining a full-time team
           </p>
-          <button className="rounded-2xl mt-4 px-4 py-2 transition-all duration-300 border border-black hover:bg-black hover:text-white cursor-pointer">
+          <button className="rounded-2xl mt-4 px-4 py-2 transition-all duration-300 border text-white border-white hover:bg-black hover:text-white cursor-pointer">
             Click me
           </button>
         </div>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Card, Space } from "antd";
+// import { useAnimate } from 'some-animation-library'; // Commented out or removed
 
 const CardData = [
   {

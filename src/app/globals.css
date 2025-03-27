@@ -5,10 +5,10 @@
 @custom-variant dark (&:is(.dark *));
 
 
-.hero{
+/* .hero{
 
   background-color: #011b1c;
-}
+} */
 .navbar{
 
   background-color: #011b1c;
