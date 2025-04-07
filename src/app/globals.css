@@ -9,10 +9,11 @@
 
   background-color: #011b1c;
 } */
-.navbar{
+/* .navbar{
 
   background-color: #011b1c;
-}
+} */
+
 .design{
   background-color: #011518;
   box-shadow: 0 0 10px 10px rgba(13, 61, 54, 0.3); /* Lighter glow effect */
@@ -25,6 +26,7 @@
 .design-btn{
   border: 2px solid #1f604f ;
 } 
+
 
 :root {
   --radius: 0.625rem;

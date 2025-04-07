@@ -9,7 +9,7 @@ function Hero2() {
             Solve Your Design barrier Today
           </h1>
 
-          <p className="text-md text-gray-500 p-3">
+          <p className="text-md text-gray-200 p-3">
             Your brand&apos;s design deserves more than unreliable freelancers
             or costly in-house teams. Hire a dedicated, experienced designer who
             understands both your brand and your vision, without the high costs

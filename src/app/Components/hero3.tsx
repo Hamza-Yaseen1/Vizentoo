@@ -29,7 +29,7 @@ function Hero3() {
   ];
 
   return (
-    <section className="py-15">
+    <section className="py-15 text-gray-200 ">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Our Creative Expertise</h2>
         
@@ -50,7 +50,7 @@ function Hero3() {
                   />
                 </div>
                 <div>
-                  <p className="text-gray-700 text-sm">{card.description}</p>
+                  <p className="text-gray-100 text-sm">{card.description}</p>
                 </div>
               </div>
             </div>
@@ -61,7 +61,7 @@ function Hero3() {
 
       <div className="images grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-12">
               <div
-                className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400"
+                className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400 bg-white text-black"
               >
                 <Image
                     src="/images/stars.png"
@@ -74,7 +74,7 @@ function Hero3() {
                 <p className="pl-3 pt-1">Try us risk-free and get a full refund in 7 days</p>
                  </div>
               <div
-                className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400"
+                className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400 bg-white text-black"
               >
                 <Image
                     src="/images/stars.png"
@@ -87,7 +87,8 @@ function Hero3() {
                 <p className="pl-3 pt-1">Try us risk-free and get a full refund in 7 days</p>
                  </div>
               <div
-                className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400"
+                className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400 bg-white text-black"
+              
               >
                 <Image
                     src="/images/stars.png"
@@ -96,11 +97,11 @@ function Hero3() {
                     width={40}
                     className="object-contain"
                   />
-                <h1 className="text-lg font-bold p-3">7 Day MoneyBack Guarantee</h1>
+                <h1 className="text-lg font-bold p-3 ">7 Day MoneyBack Guarantee</h1>
                 <p className="pl-3 pt-1">Try us risk-free and get a full refund in 7 days</p>
                  </div>
               <div
-                className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400"
+                className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400 bg-white text-black"
               >
                 <Image
                     src="/images/stars.png"

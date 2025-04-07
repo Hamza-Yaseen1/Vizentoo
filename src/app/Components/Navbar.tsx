@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="w-full bg-green-950 p-3 navbar">
+      <nav className="navbar w-full bg-[#011518] backdrop-blur-md sticky top-0 z-50 shadow-2xl p-3 navbar">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -25,7 +25,10 @@ export default function Navbar() {
             <div className="hidden md:block">
               <ul className="flex items-center space-x-8">
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Pricing</li>
+                <a href="/Services">
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Services</li>
+
+                </a>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">About us</li>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Blog</li>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Portfolio</li>
@@ -55,7 +58,7 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-green-950">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-transparent backdrop-blur-md sticky top-0 z-50 shadow-2xl">
               <ul className="flex flex-col space-y-4 p-4">
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Pricing</li>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Services</li>

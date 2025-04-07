@@ -54,7 +54,7 @@ function Services(){
                                             src={service.image}
                                             alt={service.title}
                                             fill
-                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                            sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw, (min-width: 1920px) 33vw"
                                             priority
                                             className="object-cover hover:scale-105 transition-transform duration-300"
                                         />

@@ -1,6 +1,39 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
+import { FaCheckCircle, FaTimesCircle, FaSpinner } from "react-icons/fa";
+
 
 function Footer() {
+  const [emailData, setEmailData] = useState({
+    to: "",
+  });
+
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmailData({ ...emailData, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("loading");
+
+    const res = await fetch("/api/sendEmail", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(emailData),
+    });
+
+    if (res.ok) {
+      setStatus("success");
+    } else {
+      setStatus("error");
+    }
+
+    setTimeout(() => setStatus("idle"), 3000); // Reset state after 3 seconds
+  };
+
   return (
     <footer className="bg-slate-900 text-white py-10">
       <div className="container mx-auto px-4">
@@ -99,19 +132,28 @@ function Footer() {
               <h3 className="text-lg font-semibold mb-2">Subscribe to our newsletter</h3>
               <p className="text-slate-400">Get the latest news and updates straight to your inbox.</p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-2">
+            <form className="flex flex-col sm:flex-row gap-2" onSubmit={sendEmail}>
               <input 
                 type="email" 
                 placeholder="Your email" 
+                name="to"
+                value={emailData.to}
+                onChange={handleChange}
+                required
                 className="px-4 py-2 bg-slate-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
-              <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md transition-colors">
-                Subscribe
+              <button 
+                type="submit" 
+                className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md transition-colors flex items-center"
+                disabled={status === "loading"}
+              >
+                {status === "loading" ? <FaSpinner className="animate-spin" /> : "Subscribe"}
               </button>
-            </div>
+              {status === "success" && <FaCheckCircle className="text-green-500 text-2xl ml-2" />}
+              {status === "error" && <FaTimesCircle className="text-red-500 text-2xl ml-2" />}
+            </form>
           </div>
         </div>
-        
         {/* Copyright */}
         <div className="pt-4 text-center sm:text-left text-slate-400 text-sm">
           <p>© {new Date().getFullYear()} Company Name. All rights reserved.</p>
