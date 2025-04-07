@@ -136,6 +136,7 @@ export default function Services() {
   
     
     return (
+        
         <section className="bg-[#011518]">
             <div className="top-head bg-green-500 bg-[url('/images/pic-removebg-preview.png')] p-10 bg-cover bg-center ">
                 {" "}
@@ -212,6 +213,9 @@ export default function Services() {
                     </button>
                 </div>
             </div>
+        {/* this div I added to add space between Custom Quote and footer change it later */}
+
+        <div className="p-4"></div>
         </section>
     );
 }

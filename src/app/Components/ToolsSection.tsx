@@ -31,7 +31,7 @@ const ToolsSection = () => {
   }, [api]);
 
   return (
-    <div className="tools">
+    <div className="tools ">
       <h1 className="text-3xl text-white text-center p-7">Tools We Use</h1>
       <Carousel 
         opts={{ 
@@ -44,7 +44,7 @@ const ToolsSection = () => {
         <CarouselContent className="-ml-2 md:-ml-4">
           {tools.map((tool, index) => (
             <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/4 lg:basis-1/4">
-              <div className="rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="rounded-xl   transition-all duration-300">
                 <div className="relative w-full h-16 mb-6 overflow-hidden rounded-lg">
                   <Image
                     src={tool.image}
