@@ -61,7 +61,10 @@ export default function Navbar() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-transparent backdrop-blur-md sticky top-0 z-50 shadow-2xl">
               <ul className="flex flex-col space-y-4 p-4">
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Pricing</li>
+                <a href="/Services">
+
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Services</li>
+                </a>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">About us</li>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Blog</li>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Portfolio</li>
