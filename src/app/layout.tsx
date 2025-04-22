@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/footer";
+import Script from 'next/script'; // 👈 Import Script
 
 
 const geistSans = Geist({
@@ -32,6 +33,25 @@ export default function RootLayout({
       >
         <Navbar/>
         {children}
+{/* Start of Tawk.to Script */}
+<Script
+  id="tawk-to-script"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: `
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/68072e74b57ff7190d14d7bb/1ipe0qu50';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+      })();
+    `,
+  }}
+/>
+{/* <!--End of Tawk.to Script--> */}
         <Footer/>
       </body>
     </html>
