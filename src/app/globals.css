@@ -4,7 +4,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
+body{
+  background: linear-gradient(to bottom right, #111827, #1f372b);
+  /* background: linear-gradient(135deg, #0F172A 0%, #000000 100%); */
+  /* background-color: #35e20ed8; */
 
+
+}
 /* .hero{
 
   background-color: #011b1c;
