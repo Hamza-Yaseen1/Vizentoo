@@ -16,7 +16,7 @@ export default function Navbar() {
       <nav className="navbar w-full bg-[#011518] backdrop-blur-md sticky top-0 z-50 shadow-2xl p-3 navbar">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
+            {/* Logo  */}
             <div className="flex items-center">
              
 
@@ -33,7 +33,7 @@ export default function Navbar() {
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Services</li>
 
                 </a>
-                <li className="text-white hover:text-green-600 cursor-pointer transition-colors">About us</li>
+              <a href="/About">  <li className="text-white hover:text-green-600 cursor-pointer transition-colors">About us</li></a>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Blog</li>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Portfolio</li>
               </ul>
@@ -42,7 +42,7 @@ export default function Navbar() {
             {/* Call to Action Button */}
             <div className="hidden md:block">
               <button className="text-white bg-green-600 hover:bg-green-700 px-10 py-2  rounded-full font-medium transition-colors">
-                Call me
+               <a href="/Contact">Contact</a>
               </button>
             </div>
 
@@ -69,7 +69,7 @@ export default function Navbar() {
 
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Services</li>
                 </a>
-                <li className="text-white hover:text-green-600 cursor-pointer transition-colors">About us</li>
+                <a href="/About"><li className="text-white hover:text-green-600 cursor-pointer transition-colors">About us</li></a>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Blog</li>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Portfolio</li>
                 <li>
