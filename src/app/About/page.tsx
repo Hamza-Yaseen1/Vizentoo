@@ -112,7 +112,7 @@ export default function AboutUs() {
           className="mt-24"
         >
           <a
-            href="/contact"
+            href="/Contact"
             className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 rounded-full text-lg transition"
           >
             Let’s Create Together

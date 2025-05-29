@@ -2,7 +2,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import "../globals.css";
+
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,6 +19,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo  */}
+          <Link href="/">
             <div className="flex items-center">
              
 
@@ -25,10 +28,14 @@ export default function Navbar() {
               <h1 className="ml-2 text-xl font-semibold text-white">Venzo</h1>
               
             </div>
+           </Link>
 
             <div className="hidden md:block">
               <ul className="flex items-center space-x-8">
+                <a href="/Price">
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Pricing</li>
+                
+                </a>
                 <a href="/Services">
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Services</li>
 
@@ -36,6 +43,7 @@ export default function Navbar() {
               <a href="/About">  <li className="text-white hover:text-green-600 cursor-pointer transition-colors">About us</li></a>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Blog</li>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Portfolio</li>
+                
               </ul>
             </div>
 
@@ -64,7 +72,9 @@ export default function Navbar() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-transparent backdrop-blur-md sticky top-0 z-50 shadow-2xl">
               <ul className="flex flex-col space-y-4 p-4">
+                <a href="/Price">
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Pricing</li>
+                </a>
                 <a href="/Services">
 
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Services</li>
@@ -74,7 +84,7 @@ export default function Navbar() {
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">Portfolio</li>
                 <li>
                   <button className="w-full h-10 text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-full font-medium transition-colors">
-                    Call me
+                                 <a href="/Contact">Contact</a>
                   </button>
                 </li>
               </ul>
