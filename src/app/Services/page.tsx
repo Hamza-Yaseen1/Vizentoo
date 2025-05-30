@@ -141,7 +141,7 @@ export default function Services() {
             <div className="top-head bg-green-500 bg-[url('/images/pic-removebg-preview.png')] p-10 bg-cover bg-center ">
                 {" "}
                 <div className="relative z-10 container mx-auto text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 transform hover:scale-105 transition duration-300">
+                    <h1 className="text-4xl md:text-5xl underline font-bold text-white mb-4 transform hover:scale-105 transition duration-300">
                         Our Services
                     </h1>
                     <p className="text-lg md:text-xl font-medium text-white/90 hover:text-white transition duration-300">

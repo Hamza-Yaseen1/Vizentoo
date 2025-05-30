@@ -25,7 +25,7 @@ const plans: Plan[] = [
     label: 'Start-up / Business',
     tagline: 'Your Gateway to Unlimited Creativity at an Unbeatable Price!',
     price: '$599',
-    discountPrice: '$299 for 3 Months',
+    discountPrice: '$299 FOR 3 MONTHS',
     discountNote: 'New Clients Discount – 50% off',
     includes: [
       'Branding & Logos',
@@ -49,7 +49,7 @@ const plans: Plan[] = [
     label: 'Marketing & Ads',
     tagline: 'Elevate Your Agency with Advanced Design Solutions!',
     price: '$1299',
-    discountPrice: '$649 for 3 Months',
+    discountPrice: '$649 FOR 3 MONTHS',
     discountNote: 'New Clients Discount – 50% off',
     includes: [
       'Everything in Start-up / Business',
@@ -77,7 +77,7 @@ const plans: Plan[] = [
     label: 'Agency',
     tagline: 'Push Boundaries with Premium Design & Motion Graphics!',
     price: '$1599',
-    discountPrice: '$799 for 3 Months',
+    discountPrice: '$799 FOR 3 MONTHS',
     discountNote: 'Limited-Time Offer – 50% Off',
     includes: [
       'Everything in Creative Accelerator',
@@ -148,8 +148,8 @@ export default function Price() {
                   <p className="text-base text-gray-300 italic">{plan.tagline}</p>
 
                   <div className="text-center py-4">
+                    <p className="text-2xl line-through pr-24 pb-2 text-gray-400">{plan.price}</p>
                     <p className="text-3xl font-extrabold text-green-500">{plan.discountPrice}</p>
-                    <p className="text-sm line-through text-gray-400">{plan.price}</p>
                     <p className="text-sm text-orange-400 font-medium mt-1">{plan.discountNote}</p>
                   </div>
 

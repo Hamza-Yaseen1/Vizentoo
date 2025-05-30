@@ -62,6 +62,7 @@ export default function ContactForm() {
             <option value="Brand Identity">Brand Identity</option>
             <option value="Digital Marketing">Digital Marketing</option>
             <option value="Print Design">Print Design</option>
+            <option value="Print Design">Other</option>
           </select>
           <textarea
             name="message"
