@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   icons: {
     icon: "/images/15.png", // place this file in /public
   },
+  other: {
+    "google-site-verification": "W8rq2ypu8UtZFI2xGUX0drcOIAbqP6L_NMglP6g0Nr4",
+    
+  },
 };
 
 
