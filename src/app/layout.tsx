@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Vizentoo",
-  description: "Explore bold and creative visual design by Vizentoo — a showcase of modern graphic design, branding, and digital artistry.",
+  description: "Vizentoo charges no hourly fees. Our flat-rate pricing gets you unlimited design work with no barriers. Submit your project, and we’ll pair you…",
   icons: {
     icon: "/images/15.png", // place this file in /public
   },

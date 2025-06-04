@@ -138,17 +138,21 @@ export default function Services() {
     return (
         
         <section className="bg-[#011518]">
-            <div className="top-head bg-green-500 bg-[url('/images/pic-removebg-preview.png')] p-10 bg-cover bg-center ">
-                {" "}
-                <div className="relative z-10 container mx-auto text-center">
-                    <h1 className="text-4xl md:text-5xl underline font-bold text-white mb-4 transform hover:scale-105 transition duration-300">
-                        Our Services
-                    </h1>
-                    <p className="text-lg md:text-xl font-medium text-white/90 hover:text-white transition duration-300">
-                        Over 120+ design services to elevate your brand
-                    </p>
-                </div>
-            </div>
+          <div className="top-head relative bg-green-500 bg-[url('/images/pic-removebg-preview.png')] p-10 bg-cover bg-center">
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/60 z-0"></div>
+
+  {/* Content */}
+  <div className="relative z-10 container mx-auto text-center text-white">
+    <h1 className="text-4xl md:text-5xl underline font-bold mb-4 drop-shadow-md hover:scale-105 transition duration-300">
+      Our Services
+    </h1>
+    <p className="text-lg md:text-xl font-medium text-white/90 hover:text-white transition duration-300 drop-shadow-sm">
+      Over 120+ design services to elevate your brand
+    </p>
+  </div>
+</div>
+
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

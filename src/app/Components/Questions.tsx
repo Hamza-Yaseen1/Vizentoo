@@ -1,3 +1,4 @@
+'use client'
 import {
     Accordion,
     AccordionContent,
@@ -5,6 +6,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 import "../globals.css";
+import { Typewriter } from "react-simple-typewriter";
 
 const faqData = [
     {
@@ -71,7 +73,16 @@ function Questions() {
             <div className="design mt-10 text-white w-11/12 sm:w-4/5 md:w-3/4 lg:w-4/6 rounded-3xl h-auto min-h-[13rem] m-auto px-4 py-6">
                 <div className="text">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-semibold">
-                        GRAPHIC DESIGN
+                        
+                        <Typewriter
+        words={['GRAPHIC DESIGN']}
+        loop={true}
+        cursor
+        cursorStyle='|'
+        typeSpeed={80}
+        deleteSpeed={80}
+        delaySpeed={1000}
+      />
                     </h1>
                 </div>
                 <div className="text-center mt-8 sm:mt-10 md:mt-12">
