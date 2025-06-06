@@ -20,46 +20,48 @@ export default function Services() {
             image: "/images/branding.jpg",
         },
         {
-            title: "Branding & Identity",
+            title: "Creative Strategy",
             points: [
-                "Logo design",
-                "Brand guidelines",
-                "Business cards",
-                "Letterheads",
-                "Stationery sets",
-                "Email signatures",
-                "Brand strategy",
-                "Tone of voice",
-                "Brand naming",
+                "Brand storytelling",
+                "Campaign planning",
+                "Customer journey mapping",
+                "Content strategy",
+                "Market research",
+                "User personas",
+                "Trend analysis",
+                "Idea validation",
+                "Platform-specific adaptation",
             ],
-            icon: "🖌️",
+            icon: "🧠",
         },
         {
-            title: "Branding & Identity",
+            title: "Photography & Editing",
             points: [
-                "Logo design",
-                "Brand guidelines",
-                "Business cards",
-                "Letterheads",
-                "Stationery sets",
-                "Email signatures",
-                "Brand strategy",
-                "Tone of voice",
-                "Brand naming",
+                "Product photography",
+                "Portrait shots",
+                "Lifestyle images",
+                "Event photography",
+                "Background removal",
+                "Image retouching",
+                "Color correction",
+                "Social media photoshoots",
+                "Batch editing",
+                
             ],
-            icon: "🖌️",
+            icon: " 📷 ",
         },
         {
             title: "Web Design",
             points: [
-                "Website UI/UX",
-                "Mobile responsive design",
-                "E-commerce sites",
-                "Landing pages",
-                "Wireframing",
-                "Prototyping",
-                "CMS integration",
-                "User flow design",
+                "Responsive website layouts",
+    "Custom landing page design",
+    "E-commerce UI design",
+    "Wireframes & user flows",
+    "Figma to code-ready handoff",
+    "Homepage and inner page design",
+    "Blog & content page layouts",
+    "Design for speed & usability",
+    "SEO-friendly design structure",
             ],
             icon: "💻",
         },
@@ -67,29 +69,31 @@ export default function Services() {
             title: "Print Design",
             points: [
                 "Brochures",
-                "Flyers",
-                "Posters",
-                "Business cards",
-                "Packaging",
-                "Labels",
-                "Catalogs",
-                "Magazine layouts",
+    "Flyers",
+    "Posters",
+    "Business cards",
+    "Packaging",
+    "Labels",
+    "Catalogs",
+    "Magazine layouts",
+    "Print-ready files",
             ],
             icon: "📄",
         },
         {
-            title: "Digital Marketing",
+            title: "UI Components Design",
             points: [
-                "Social media graphics",
-                "Email campaigns",
-                "Digital ads",
-                "Infographics",
-                "Presentation decks",
-                "Banner ads",
-                "Animated GIFs",
-                "Cover photos",
+                "Design systems",
+    "Reusable component libraries",
+    "Button styles & states",
+    "Input fields & form elements",
+    "Modal and dialog interfaces",
+    "Tabs, sliders & accordions",
+    "Design tokens & theming",
+    "Accessibility-first components (WCAG)",
+    "Cross-platform responsive UI kits",
             ],
-            icon: "📈",
+            icon: "🧰",
         },
         {
             title: "Motion Graphics",
@@ -180,7 +184,7 @@ export default function Services() {
                                 ))}
                             </ul>
                             <button className="mt-4 text-green-600 font-medium hover:text-green-700 transition flex items-center">
-                                Learn more
+                                <a href="/Contact">Learn more</a>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="h-4 w-4 ml-1"
@@ -213,7 +217,7 @@ export default function Services() {
                         you.
                     </p>
                     <button className="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-md">
-                        Get a Custom Quote
+                       <a href="/Contact"> Get a Custom Quote</a>
                     </button>
                 </div>
             </div>

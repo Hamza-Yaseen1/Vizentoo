@@ -65,10 +65,10 @@ export default function AboutUs() {
             Our Story
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            Founded in 2024, Vizentoo started as a small group of passionate designers and tech enthusiasts who shared a vision: to revolutionize the way businesses access creative services. Frustrated by slow agencies and unreliable freelancers, we decided to build something radically different — an always-on, subscription-based design platform.
+            Founded in 2024, Vizentoo started as a small group of passionate designers and tech enthusiasts who shared a vision: to revolutionize the way businesses access creative services. Frustrated by slow teams and unreliable freelancers, we decided to build something radically different — an always-on, subscription-based design platform.
           </p>
           <p className="text-gray-300 leading-relaxed">
-            Today, Vizentoo stands as a trusted design partner for hundreds of startups, creators, and global companies. We don&apos;t just deliver designs — we craft brand experiences that connect, inspire, and sell.
+            Today, Vizentoo stands as a trusted design partner for hundreds of startups, creators,agencies and global companies. We don&apos;t just deliver designs — we craft brand experiences that connect, inspire, and sell.
           </p>
         </motion.div>
 
