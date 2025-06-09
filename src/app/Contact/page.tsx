@@ -32,7 +32,8 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-6 bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl">
+    <>  
+    <div className="max-w-lg mt-2 mx-auto p-6 bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl">
       <h2 className="text-3xl font-bold text-center text-black mb-4">Let&apos;s Work Together</h2>
       {isSubmitted ? (
         <p className="text-green-600 text-center text-lg">Thank you! We&apos;ll be in touch soon.</p>
@@ -80,5 +81,7 @@ export default function ContactForm() {
         </form>
       )}
     </div>
+    <br />
+      </>
   );
 }

@@ -22,6 +22,7 @@ export default function Home() {
     <CardV/>
     <Diff/>
     <MainCard/>
+    <br />
     <Questions/>
 
     </>
