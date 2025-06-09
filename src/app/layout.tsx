@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/footer";
 import Script from 'next/script'; // 👈 Import Script
+import TypeCard from "./Components/TypeCard";
 
 
 const geistSans = Geist({
@@ -60,6 +61,7 @@ export default function RootLayout({
   }}
 />
 {/* <!--End of Tawk.to Script--> */}
+<TypeCard/>
         <Footer/>
       </body>
     </html>
