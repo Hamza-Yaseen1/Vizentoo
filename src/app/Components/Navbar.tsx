@@ -23,9 +23,9 @@ export default function Navbar() {
             <div className="flex items-center">
              
 
-              <Image src="/images/15.png" height={50} width={50} alt="logo" className="h-10 w-10" />
+              <Image src="/images/3 1.png" height={200} width={200} alt="logo" />
 
-              <h1 className="ml-2 text-xl font-semibold text-white">Venzo</h1>
+              {/* <h1 className="ml-2 text-xl font-semibold text-white">Vizentoo</h1> */}
               
             </div>
            </Link>
