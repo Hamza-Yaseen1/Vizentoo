@@ -23,11 +23,11 @@ function MainCard() {
         </div>
 
         {/* Image Section */}
-        <div className="offerCard  h-72 lg:h-80 w-full lg:w-auto flex items-center justify-center mt-6 lg:mt-0 ">
+        <div className="offerCard  h-64 lg:h-72 w-full lg:w-auto flex items-center justify-center mt-6 lg:mt-0 ">
           <img
             src="/images/pic10-removebg-preview 1.png"
             alt="Fitness Training"
-            className=" h-64  lg:h-72 w-64 lg:w-72 object-cover sm:mt-7 sm:h-80 sm:w-80"
+            className=" h-56  lg:h-72 w-64 lg:w-72 object-cover sm:mt-7 sm:h-80 sm:w-80"
           />
         </div>
       </div>

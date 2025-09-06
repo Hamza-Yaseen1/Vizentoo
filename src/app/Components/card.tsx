@@ -51,8 +51,8 @@ function CardV() {
                   <Image 
                     src={data.pic} 
                     alt="" 
-                    height={80} 
-                    width={80} 
+                    height={70} 
+                    width={70} 
                     className="object-contain"
                   />
                 </div>
