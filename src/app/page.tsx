@@ -20,13 +20,13 @@ export default function Home() {
     <About/>
     <Services/>
     <Hero3/>
+    <GetStarted/>
     <CardV/>
     <Diff/>
     <MainCard/>
     <br />
     <Questions/>
-    <br />
-    <GetStarted/>
+    
     </>
   );
 }
