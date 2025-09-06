@@ -18,7 +18,7 @@ function MainCard() {
             Know what you want? Great. Got questions? Even better{" "}
           </p>
           <button className="btn px-6 py-3 bg-gray-900 text-white font-medium rounded-4xl mt-5 hover:bg-gray-800 transition">
-            Join Now
+            <a href="/Contact">Join Now</a>
           </button>
         </div>
 

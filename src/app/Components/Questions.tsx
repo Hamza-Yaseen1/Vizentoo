@@ -120,7 +120,7 @@ function Questions() {
             Still have questions? We&apos;re here to help!
           </p>
           <button className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors duration-300">
-            Contact Us
+            <a href="/Contact">Contact Us</a>
           </button>
         </div>
       </div>

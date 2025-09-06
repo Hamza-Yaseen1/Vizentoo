@@ -72,7 +72,7 @@ function Services(){
                 </Carousel>
             </div>
             <button className="text-center border-2 border-black px-6 py-3 rounded-full hover:text-white hover:bg-black transition-all duration-300 mx-auto block mt-8 font-medium text-lg">
-                All Design Services
+                <a href="/Services">All Design Services</a>
             </button>
         </section>
     )

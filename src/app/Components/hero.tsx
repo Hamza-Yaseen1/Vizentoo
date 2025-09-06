@@ -94,7 +94,7 @@ export default function Hero() {
             onClick={sequence}
             className="mt-5 bg-green-500 hover:bg-green-600 cursor-pointer text-black px-8 py-3 xl:px-10 xl:py-4 2xl:px-12 2xl:py-5 rounded-full font-medium text-lg xl:text-xl 2xl:text-2xl transition-colors"
           >
-            Booking
+            <a href="/Contact">Booking</a>
           </button>
         </div>
 
