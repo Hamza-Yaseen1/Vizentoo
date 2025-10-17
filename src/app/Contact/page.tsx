@@ -34,6 +34,12 @@ export default function ContactForm() {
 
   return (
     <>
+    <motion.h1
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.6 }}
+        className="max-w-lg mt-2 mx-auto p-6 text-white text-3xl font-bold pl-40"
+      >Contact US</motion.h1>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

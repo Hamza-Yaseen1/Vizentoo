@@ -34,22 +34,22 @@ export default function Services() {
             ],
             icon: "🧠",
         },
-        {
-            title: "Photography & Editing",
-            points: [
-                "Product photography",
-                "Portrait shots",
-                "Lifestyle images",
-                "Event photography",
-                "Background removal",
-                "Image retouching",
-                "Color correction",
-                "Social media photoshoots",
-                "Batch editing",
-                
-            ],
-            icon: " 📷 ",
-        },
+       {
+    title: "Video Editing",
+    points: [
+        "Cutting and trimming clips",
+        "Adding transitions and effects",
+        "Color grading and correction",
+        "Audio syncing and mixing",
+        "Text and subtitle overlays",
+        "Motion graphics and animations",
+        "Social media video formatting",
+        "Highlight reels and montages",
+        "Exporting in multiple resolutions",
+    ],
+    icon: "🎥",
+},
+
         {
             title: "Web Design",
             points: [
