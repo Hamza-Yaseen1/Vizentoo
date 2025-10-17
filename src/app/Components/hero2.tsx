@@ -3,6 +3,7 @@ import Image from "next/image";
 function Hero2() {
   return (
     <>
+    
       <section className="md:flex justify-evenly p-9 pt-24">
         <div className="text md:w-1/2 ">
           <h1 className="text-3xl font-bold p-3 text-white">
@@ -21,11 +22,11 @@ function Hero2() {
         </div>
         <div className="Image-hero">
           <Image
-            src="/images/pexels-photo-11180937.webp"
+            src="/images/Untitled-1 2.png"
             alt="Description"
             height={300}
             width={300}
-            className="pt-10"
+            className="pt-10 bg-transparent"
           />
         </div>
       </section>
