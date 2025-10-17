@@ -2,11 +2,11 @@
 import Image from "next/image";
 function About() {
     return (
-        <section className="max-w-4xl mx-auto py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8">
-            <h1 className="text-center text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-white">
+        <section className=" mx-auto py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 bg-white">
+            <h1 className="text-center text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-black">
                 What is Vizentoo?
             </h1>
-            <p className="text-center text-base sm:text-sm md:text-xl leading-relaxed text-gray-200 max-w-3xl mx-auto">
+            <p className="text-center text-base sm:text-sm md:text-xl leading-relaxed text-gray-900 max-w-3xl mx-auto">
                 At our core, we exist to simplify design for businesses already excelling in graphic services. 
                 By offering seamless access to top-tier designers on a monthly subscription, we ensure your 
                 team can meet growing demands without compromising quality. This allows companies to focus 
