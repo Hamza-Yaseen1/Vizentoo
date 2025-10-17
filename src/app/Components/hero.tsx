@@ -20,7 +20,7 @@ export default function Hero() {
   }
 
   return (
-    <div className="relative w-full min-h-screen bg-green-500 overflow-hidden bg-gradient-to-br from-[#0F172A] to-[#000000] flex items-center justify-center px-4">
+    <div className="relative w-full min-h-screen bg-green-500 overflow-hidden bg-gradient-to-br from-[#0F172A] to-[#000000] flex items-center justify-center px-4 bg-[url('/images/black-background-with-yellow-dots-vector.jpg')] bg-no-repeat bg-cover">
       
       {/* Blurred Decorative Shapes */}
       <div className="absolute top-[-150px] left-[-150px] w-[400px] h-[400px] bg-green-400 opacity-20 rounded-full blur-3xl"></div>
