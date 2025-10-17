@@ -2,13 +2,10 @@ import Image from "next/image";
 
 function Hero2() {
   return (
-    <>
-<<<<<<< HEAD
-      <section className="md:flex justify-evenly p-9 pt-24 bg-white">
-=======
     
-      <section className="md:flex justify-evenly p-9 pt-24">
->>>>>>> 37f53ea3cba8aa36a8c70e06a5df9dc0b96f8016
+
+
+      <section className="md:flex justify-evenly p-9 pt-24 bg-white">
         <div className="text md:w-1/2 ">
           <h1 className="text-3xl font-bold p-3 ">
             Solve Your Design barrier Today
@@ -26,11 +23,8 @@ function Hero2() {
         </div>
         <div className="Image-hero">
           <Image
-<<<<<<< HEAD
+
             src="/images/1.webp"
-=======
-            src="/images/Untitled-1 2.png"
->>>>>>> 37f53ea3cba8aa36a8c70e06a5df9dc0b96f8016
             alt="Description"
             height={300}
             width={300}
@@ -38,7 +32,6 @@ function Hero2() {
           />
         </div>
       </section>
-    </>
-  );
+      );
 }
 export default Hero2;
