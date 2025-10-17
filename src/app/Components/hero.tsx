@@ -20,7 +20,7 @@ export default function Hero() {
   }
 
   return (
-    <div className="relative w-full min-h-screen bg-green-500 overflow-hidden bg-gradient-to-br from-[#0F172A] to-[#000000] flex items-center justify-center px-4 bg-[url('/images/black-background-with-yellow-dots-vector.jpg')] bg-no-repeat bg-cover">
+    <div className="relative w-full min-h-screen bg-green-500 overflow-hidden bg-gradient-to-br from-[#0F172A] to-[#000000] flex items-center justify-center px-4">
       
       {/* Blurred Decorative Shapes */}
       <div className="absolute top-[-150px] left-[-150px] w-[400px] h-[400px] bg-green-400 opacity-20 rounded-full blur-3xl"></div>
@@ -90,8 +90,7 @@ export default function Hero() {
         {/* Booking Button */}
         <div className="mt-10 xl:mt-12 2xl:mt-16 text-center md:text-left">
           <button
-            ref={scope}
-            onClick={sequence}
+            
             className="mt-5 bg-green-500 hover:bg-green-600 cursor-pointer text-black px-8 py-3 xl:px-10 xl:py-4 2xl:px-12 2xl:py-5 rounded-full font-medium text-lg xl:text-xl 2xl:text-2xl transition-colors"
           >
             <a href="/Contact">Booking</a>
