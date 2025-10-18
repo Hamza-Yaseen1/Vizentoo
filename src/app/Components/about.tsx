@@ -6,6 +6,7 @@ function About() {
             <h1 className="text-center text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-black">
                 What is Vizentoo?
             </h1>
+            
             <p className="text-center text-base sm:text-sm md:text-xl leading-relaxed text-gray-900 max-w-3xl mx-auto">
                 At our core, we exist to simplify design for businesses already excelling in graphic services. 
                 By offering seamless access to top-tier designers on a monthly subscription, we ensure your 

@@ -12,23 +12,23 @@ function Hero3() {
     },
     {
       icon: "/images/check_box.png", // You might want to replace with appropriate icons
-      title: "Creative Solutions",
+      title: "Reliable Project Delivery",
       description:
-        "Experience the same level of creative expertise trusted by major brands, now brought to your projects or your clients' ensuring world-class quality at every step",
+        "Dedicated project managers and clear milestones ensure on-time releases and consistent quality from kickoff to launch.",
       className: "creative",
     },
     {
       icon: "/images/target 1.png", // You might want to replace with appropriate icons
-      title: "Quality Guaranteed",
+      title: "Precision Audience Targeting",
       description:
-        "Experience the same level of creative expertise trusted by major brands, now brought to your projects or your clients' ensuring world-class quality at every step",
+        "Data-driven research and tailored messaging that hit the right people with the right message at the right time.",
       className: "tick",
     },
     {
       icon: "/images/newpreficon-2.svg fill.png", // You might want to replace with appropriate icons
-      title: "Forward Thinking",
+      title: "Collaborative Teamwork",
       description:
-        "Experience the same level of creative expertise trusted by major brands, now brought to your projects or your clients' ensuring world-class quality at every step",
+        "Cross-disciplinary teams work closely with you to iterate quickly, reduce risk, and deliver solutions your users love.",
       className: "arrow",
     },
   ];
