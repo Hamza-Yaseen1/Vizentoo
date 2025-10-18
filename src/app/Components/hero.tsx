@@ -4,36 +4,63 @@ import "../globals.css";
 import { useEffect } from "react";
 import { useAnimate, motion } from "framer-motion";
 import { CircleCheckBig } from "lucide-react";
+import DotGrid from "../animation/DotGrid";
 
 export default function Hero() {
-  // Properly typed animate hook
+  // typed animate hook
   const [scope, animate] = useAnimate<HTMLDivElement>();
 
-  // Animation sequence (rotate + scale)
+  // Animation sequence (rotate + scale) — safe guard if scope.current is missing
   async function sequence() {
-    await animate([
-      [scope.current, { rotate: -90 }, { duration: 0.4 }],
-      [scope.current, { scale: 1.5 }, { duration: 0.4 }],
-      [scope.current, { rotate: 0 }, { duration: 0.4 }],
-      [scope.current, { scale: 1 }, { duration: 0.4 }],
-    ]);
+    if (!scope.current || !animate) return;
+    try {
+      await animate([
+        [scope.current, { rotate: -90 }, { duration: 0.4 }],
+        [scope.current, { scale: 1.5 }, { duration: 0.4 }],
+        [scope.current, { rotate: 0 }, { duration: 0.4 }],
+        [scope.current, { scale: 1 }, { duration: 0.4 }],
+      ]);
+    } catch (e) {
+      // fail silently — but you can console.log(e) while debugging
+      // console.error('Animation failed', e);
+    }
   }
 
-  // Run animation when component mounts
+  // Run animation only when ref is mounted
   useEffect(() => {
+    if (!scope.current) return;
     sequence();
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scope.current, animate]);
 
   return (
     <div
       ref={scope}
       className="relative w-full min-h-screen bg-gradient-to-br from-[#0F172A] to-[#000000] flex items-center justify-center px-4 overflow-hidden"
+      aria-label="Hero section"
     >
-      {/* Blurred Decorative Shapes */}
-      <div className="absolute top-[-150px] left-[-150px] w-[400px] h-[400px] bg-green-400 opacity-20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-[-150px] right-[-150px] w-[400px] h-[400px] bg-blue-400 opacity-20 rounded-full blur-3xl"></div>
+      {/* DotGrid positioned absolutely to cover the whole hero and behind content */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <DotGrid
+          dotSize={10}
+          gap={15}
+          baseColor="#000"
+          activeColor="#F8F9FA"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+          // If DotGrid accepts style props, ensure it fills container:
+          // style={{ width: '100%', height: '100%' }}
+        />
+      </div>
 
-      {/* Content */}
+      {/* Blurred Decorative Shapes (z-0 so they sit behind content but above DotGrid if needed) */}
+      <div className="absolute top-[-150px] left-[-150px] w-[400px] h-[400px] bg-green-400 opacity-20 rounded-full blur-3xl z-0"></div>
+      <div className="absolute bottom-[-150px] right-[-150px] w-[400px] h-[400px] bg-blue-400 opacity-20 rounded-full blur-3xl z-0"></div>
+
+      {/* Content (z-10 so it sits on top) */}
       <div className="relative z-10 hero px-4 py-12 md:px-10 md:py-16 xl:px-20 xl:py-24 2xl:px-32 2xl:py-32 max-w-7xl mx-auto">
         <div className="text-center md:text-left">
           <motion.h2
