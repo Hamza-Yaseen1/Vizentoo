@@ -22,7 +22,7 @@ export default function Hero() {
       ]);
     } catch (e) {
       // fail silently — but you can console.log(e) while debugging
-      // console.error('Animation failed', e);
+      console.error('Animation failed', e);
     }
   }
 
