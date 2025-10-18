@@ -1,4 +1,6 @@
 import Image from "next/image";
+import PixelCard from "../animation/PixelCard";
+
 
 function Hero3() {
   const featureCards = [
@@ -60,9 +62,10 @@ function Hero3() {
           ))}
         </div>
       </div>
+
       <div className="max-w-5xl mx-auto py-10 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8">
         <div className="images grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-12">
-          <div className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400 bg-white text-black">
+        <PixelCard variant="pink" className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400 bg-white text-black">
             <Image
               src="/images/stars.png"
               alt="images"
@@ -76,9 +79,9 @@ function Hero3() {
             <p className="pl-2 pt-1 font-medium text-sm text-gray-600">
               Try us risk-free and get a full refund in 7 days
             </p>
-          </div>
-
-          <div className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400 bg-white text-black">
+          
+</PixelCard>
+          <PixelCard variant="blue" className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400 bg-white text-black">
             <Image
               src="/images/stars.png"
               alt="images"
@@ -90,8 +93,8 @@ function Hero3() {
             <p className="pl-2 pt-1 text-sm font-medium text-gray-600">
               Get your designs the same day with our premium packag
             </p>
-          </div>
-          <div className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400 bg-white text-black">
+</PixelCard>
+          <PixelCard variant="yellow" className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400 bg-white text-black">
             <Image
               src="/images/stars.png"
               alt="images"
@@ -105,8 +108,8 @@ function Hero3() {
             <p className="pl-2 pt-1 text-sm font-medium text-gray-600">
               Request as many revisions as needed until your design is perfect.
             </p>
-          </div>
-          <div className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400 bg-white text-black">
+          </PixelCard>
+          <PixelCard variant="default" className="w-full h-auto aspect-square object-cover rounded-lg hover:scale-105 transition-all duration-300 shadow-md p-3 shadow-amber-400 bg-white text-black">
             <Image
               src="/images/stars.png"
               alt="images"
@@ -119,7 +122,7 @@ function Hero3() {
               A dedicated mid/senior designer, art director, and project manager
               focused on your design success
             </p>
-          </div>
+          </PixelCard>
         </div>
       </div>
     </section>
