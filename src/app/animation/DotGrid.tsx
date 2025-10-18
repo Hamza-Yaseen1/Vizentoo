@@ -270,7 +270,7 @@ if (wrapperRef.current) {
       }
     };
 
-const throttledMove = throttle(onMove as (...args: any[]) => void, 50);
+const throttledMove = throttle(onMove as (...args: unknown[]) => void, 50);
     window.addEventListener('mousemove', throttledMove, { passive: true });
     window.addEventListener('click', onClick);
 
