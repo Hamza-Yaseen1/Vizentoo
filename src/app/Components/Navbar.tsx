@@ -54,9 +54,11 @@ export default function Navbar() {
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
                   Blog
                 </li>
-                <li className="text-white hover:text-green-600 cursor-pointer transition-colors ">
+                <a href="/Portfolio">
+<li className="text-white hover:text-green-600 cursor-pointer transition-colors ">
                   Portfolio
                 </li>
+                </a>
               </ul>
             </div>
 

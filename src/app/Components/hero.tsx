@@ -13,17 +13,9 @@ export default function Hero() {
   // Animation sequence (rotate + scale) — safe guard if scope.current is missing
   async function sequence() {
     if (!scope.current || !animate) return;
-    try {
-      await animate([
-        [scope.current, { rotate: -90 }, { duration: 0.4 }],
-        [scope.current, { scale: 1.5 }, { duration: 0.4 }],
-        [scope.current, { rotate: 0 }, { duration: 0.4 }],
-        [scope.current, { scale: 1 }, { duration: 0.4 }],
-      ]);
-    } catch (e) {
-      // fail silently — but you can console.log(e) while debugging
-      console.error('Animation failed', e);
-    }
+
+    await animate(scope.current, { scale: 1.2 }, { duration: 0.5 });
+    await animate(scope.current, { scale: 1 }, { duration: 0.5 });
   }
 
   // Run animation only when ref is mounted
