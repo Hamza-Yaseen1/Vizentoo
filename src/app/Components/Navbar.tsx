@@ -51,9 +51,10 @@ export default function Navbar() {
                     About us
                   </li>
                 </a>
+               <a href="/Blog">
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
                   Blog
-                </li>
+                </li></a>
                 <a href="/Portfolio">
 <li className="text-white hover:text-green-600 cursor-pointer transition-colors ">
                   Portfolio
@@ -102,9 +103,10 @@ export default function Navbar() {
                     About us
                   </li>
                 </a>
+               <a href="/Blog">
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
                   Blog
-                </li>
+                </li></a>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
                   Portfolio
                 </li>

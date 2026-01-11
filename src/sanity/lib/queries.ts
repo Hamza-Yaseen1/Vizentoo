@@ -11,6 +11,8 @@ export const postsQuery = groq`*[_type == "post" && defined(slug.current)] | ord
   publishedAt,
   "imageURL": mainImage.asset->url,
   "authorName": author->name,
+    "authorImage": author->image
+
 }`;
 
 // Get a single post by its slug
@@ -21,7 +23,9 @@ export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{
     mainImage,
     body,
     publishedAt,
-    "authorName": author->name
+    "authorName": author->name,
+    "authorImage": author->image
+
   }`;
 
 // Get all post slugs
