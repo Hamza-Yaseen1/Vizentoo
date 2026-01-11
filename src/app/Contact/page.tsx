@@ -23,7 +23,9 @@ const PLANS = ["Basic", "Platinum", "Premium"] as const;
 type Service = typeof SERVICES[number];
 type Plan = typeof PLANS[number];
 
-export default function ContactPage() {
+import { Suspense } from "react";
+
+function ContactForm() {
   const params = useSearchParams();
   const planFromURL = (params.get("plan") || "").trim();
 
@@ -39,7 +41,7 @@ export default function ContactPage() {
       const normalized = (planFromURL[0]?.toUpperCase() + planFromURL.slice(1).toLowerCase()) as Plan;
       if (PLANS.includes(normalized)) setSelectedPlan(normalized);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const gradient = useMemo(
@@ -57,7 +59,7 @@ export default function ContactPage() {
       const formData = new FormData(form);
 
       formData.append("access_key", "f91ea6dc-6fef-4530-b6b9-af672844db4b");
-      
+
       // include chosen plan in the submission
       if (selectedPlan) formData.append("selected_plan", selectedPlan);
 
@@ -70,7 +72,7 @@ export default function ContactPage() {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(Object.fromEntries(formData as any)),
+        body: JSON.stringify(Object.fromEntries(Array.from(formData))),
       });
 
       const data = await res.json();
@@ -82,7 +84,7 @@ export default function ContactPage() {
       } else {
         setError(data.message || "Something went wrong. Please try again.");
       }
-    } catch (err) {
+    } catch {
       setError("Network error. Please check your connection and try again.");
     } finally {
       setIsSubmitting(false);
@@ -222,5 +224,13 @@ export default function ContactPage() {
         </Card>
       </section>
     </div>
+  );
+}
+
+export default function ContactPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ContactForm />
+    </Suspense>
   );
 }

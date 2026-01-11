@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Star, ExternalLink } from "lucide-react";
 
 // Project Type
@@ -197,10 +198,12 @@ export default function PortfolioPage() {
             className="bg-white rounded-2xl shadow-lg p-8 text-left hover:shadow-xl transition duration-300"
           >
             <div className="flex items-center gap-4 mb-4">
-              <img
-                src={t.avatar}
+              <Image
+                src={t.avatar!}
                 alt={t.name}
-                className="w-12 h-12 rounded-full object-cover"
+                width={48}
+                height={48}
+                className="rounded-full object-cover"
               />
               <div>
                 <h3 className="font-semibold text-gray-900">{t.name}</h3>

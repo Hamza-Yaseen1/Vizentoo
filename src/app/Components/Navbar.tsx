@@ -35,43 +35,43 @@ export default function Navbar() {
 
             <div className="hidden md:block">
               <ul className="flex items-center space-x-8">
-                <a href="/">
+                <Link href="/">
                   <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
                     Home
                   </li>
-                </a>
-                <a href="/Price">
+                </Link>
+                <Link href="/Price">
                   <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
                     Pricing
                   </li>
-                </a>
-                <a href="/Services">
+                </Link>
+                <Link href="/Services">
                   <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
                     Services
                   </li>
-                </a>
-                <a href="/About">
+                </Link>
+                <Link href="/About">
                   {" "}
                   <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
                     About us
                   </li>
-                </a>
-               <a href="/Blog">
-                <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
-                  Blog
-                </li></a>
-                <a href="/Portfolio">
-<li className="text-white hover:text-green-600 cursor-pointer transition-colors ">
-                  Portfolio
-                </li>
-                </a>
+                </Link>
+                <Link href="/Blog">
+                  <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
+                    Blog
+                  </li></Link>
+                <Link href="/Portfolio">
+                  <li className="text-white hover:text-green-600 cursor-pointer transition-colors ">
+                    Portfolio
+                  </li>
+                </Link>
               </ul>
             </div>
 
             {/* Call to Action Button */}
             <div className="hidden md:block md:pl-5">
               <button className="text-white bg-green-600 hover:bg-green-700 px-10 py-2  rounded-full font-medium transition-colors">
-                <a href="/Contact">Contact</a>
+                <Link href="/Contact">Contact</Link>
               </button>
             </div>
 
@@ -93,31 +93,31 @@ export default function Navbar() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-transparent backdrop-blur-md sticky top-0 z-50 shadow-2xl">
               <ul className="flex flex-col space-y-4 p-4">
-                <a href="/Price">
+                <Link href="/Price">
                   <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
                     Pricing
                   </li>
-                </a>
-                <a href="/Services">
+                </Link>
+                <Link href="/Services">
                   <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
                     Services
                   </li>
-                </a>
-                <a href="/About">
+                </Link>
+                <Link href="/About">
                   <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
                     About us
                   </li>
-                </a>
-               <a href="/Blog">
-                <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
-                  Blog
-                </li></a>
+                </Link>
+                <Link href="/Blog">
+                  <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
+                    Blog
+                  </li></Link>
                 <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
                   Portfolio
                 </li>
                 <li>
                   <button className="w-full h-10 text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-full font-medium transition-colors">
-                    <a href="/Contact">Contact</a>
+                    <Link href="/Contact">Contact</Link>
                   </button>
                 </li>
               </ul>

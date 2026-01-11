@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "../globals.css";
 function MainCard() {
   return (
@@ -24,9 +25,11 @@ function MainCard() {
 
         {/* Image Section */}
         <div className="offerCard  h-64 lg:h-72 w-full lg:w-auto flex items-center justify-center mt-6 lg:mt-0 ">
-          <img
+          <Image
             src="/images/pic10-removebg-preview 1.png"
             alt="Fitness Training"
+            width={500}
+            height={500}
             className=" h-56  lg:h-72 w-64 lg:w-72 object-cover sm:mt-7 sm:h-80 sm:w-80"
           />
         </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import "../globals.css";
-import { useEffect } from "react";
+import { useEffect, useCallback } from "react";
 import { useAnimate, motion } from "framer-motion";
 import { CircleCheckBig } from "lucide-react";
 import DotGrid from "../animation/DotGrid";
@@ -9,17 +9,17 @@ import DotGrid from "../animation/DotGrid";
 export default function Hero() {
   const [scope, animate] = useAnimate<HTMLDivElement>();
 
-  async function sequence() {
+  const sequence = useCallback(async () => {
     if (!scope.current || !animate) return;
 
     await animate(scope.current, { scale: 1.2 }, { duration: 0.5 });
     await animate(scope.current, { scale: 1 }, { duration: 0.5 });
-  }
+  }, [animate, scope]);
 
   useEffect(() => {
     if (!scope.current) return;
     sequence();
-  }, [scope.current, animate]);
+  }, [scope, sequence]);
 
   return (
     <div
@@ -113,7 +113,7 @@ export default function Hero() {
           >
             <a href="/Contact">Booking</a>
           </button>
-         
+
         </div>
       </div>
     </div>

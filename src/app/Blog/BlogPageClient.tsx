@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useTransition } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { type SanityDocument } from "next-sanity";
 
 interface BlogPageClientProps {
@@ -62,21 +63,19 @@ export default function BlogPageClient({ posts }: BlogPageClientProps) {
         <div className="flex gap-3">
           <button
             onClick={() => setFilter("recent")}
-            className={`px-4 py-2 rounded-full font-semibold ${
-              filter === "recent"
-                ? "bg-indigo-600 text-white"
-                : "bg-gray-100 text-gray-700"
-            }`}
+            className={`px-4 py-2 rounded-full font-semibold ${filter === "recent"
+              ? "bg-indigo-600 text-white"
+              : "bg-gray-100 text-gray-700"
+              }`}
           >
             Recent
           </button>
           <button
             onClick={() => setFilter("older")}
-            className={`px-4 py-2 rounded-full font-semibold ${
-              filter === "older"
-                ? "bg-indigo-600 text-white"
-                : "bg-gray-100 text-gray-700"
-            }`}
+            className={`px-4 py-2 rounded-full font-semibold ${filter === "older"
+              ? "bg-indigo-600 text-white"
+              : "bg-gray-100 text-gray-700"
+              }`}
           >
             Older
           </button>
@@ -89,15 +88,16 @@ export default function BlogPageClient({ posts }: BlogPageClientProps) {
           <Link
             key={post._id}
             href={`/Blog/${post.slug.current}`}
-            onClick={() => startTransition(() => {})}
+            onClick={() => startTransition(() => { })}
             className="group relative rounded-2xl overflow-hidden border bg-white hover:shadow-2xl transition"
           >
             {post.imageURL && (
-              <div className="h-44 overflow-hidden">
-                <img
+              <div className="h-44 overflow-hidden relative">
+                <Image
                   src={post.imageURL}
                   alt={post.title}
-                  className="h-full w-full object-cover group-hover:scale-110 transition-transform"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform"
                 />
               </div>
             )}
