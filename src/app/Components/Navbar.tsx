@@ -35,6 +35,11 @@ export default function Navbar() {
 
             <div className="hidden md:block">
               <ul className="flex items-center space-x-8">
+                <a href="/">
+                  <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
+                    Home
+                  </li>
+                </a>
                 <a href="/Price">
                   <li className="text-white hover:text-green-600 cursor-pointer transition-colors">
                     Pricing

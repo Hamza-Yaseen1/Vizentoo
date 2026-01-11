@@ -113,13 +113,7 @@ export default function Hero() {
           >
             <a href="/Contact">Booking</a>
           </button>
-          <button
-            onClick={sequence}
-            className="mt-4 bg-purple-500 hover:bg-purple-600 cursor-pointer text-black px-6 py-2.5 xl:px-8 xl:py-3 rounded-full font-medium text-base xl:text-lg transition-transform hover:scale-105"
-          >
-            <a href="https://chat.google.com/room/AAQAI7lOYcM?cls=7" target="_blank">  Chat with us on Google Chat
-</a>
-          </button>
+         
         </div>
       </div>
     </div>
